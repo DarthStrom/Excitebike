@@ -1,13 +1,5 @@
 language: swift
-before_script:
-- "./scripts/travis/add-key.sh"
-after_script:
-- "./scripts/travis/remove-key.sh"
-after_success:
-- "./scripts/travis/testflight.sh"
-env:
-  global:
-  - APPNAME="Excitebike"
-  - 'DEVELOPER_NAME="iPhone Distribution: Jason Duffy (SPU386ZNKS)"'
-  - PROFILE_UUID=3fbd6db6-ef2a-4681-8363-2f466902cf71
-  - secure: iM4DukfJmzNdOIu6oGXnhmjujmNR8Ym5Vs3Gz9C327rQ/6ecqGA33muJfs88FpjzoRgDfAZkngUOVVeGbJ+ggKHcaKGLWx/ZGW6mWGU0CbdZbnboffEHT9+Rcexl91hUHwMZjZSQkd8maXYVR9Oc8Pf3eWrEVgLIOl2jlIW0sGxXqh41S3DgmFo4UtF1t4ZDSrktyYI5rSuP6G8Y3KVYVeagvVgku0SB2kVjpf5gfw0dazQk053lZe+AgreZjDZz1fOO/dyx40TxOVyO+NSGzdTV5A9kIh/wYp7Hbbq8lieEHzApzsrlekeZxk6GToDdlpQUPz+pN+f/SCf81LVCSQozVUlfPRqFswshN8pBgglyf4R6f0cIesuBL/uYJuOeLiKIUCecLHe6OUBJ2xDwyMcrUT3KYC5ei+1XBZLN2FBz2TPD9JHdDDOM6K7iEvEZeLTHv/jyEyuR7tAawXWI4QvqwzLr++ep0ks7QEs5PchG9xKaxBRGNVLZFuS7NLwl2qRlg5fsqvUXEMO2xzU8Zz8rO7swhIqswE6qB3yrHHwFJBk6zl7xvCRZ9Hez/f3VG4THUSjWSpb+IwVG7pWC6IJ0d458++jABoX3y3LS+6daS2s2UJVbRmCEFOKDCNlnvq6lUuYqGSoR23Iy5vlmdHpPPgc1j/6W0i00f4X+boo=
+osx_image: xcode7.3
+script:
+- ./fastlane/travis.sh
+
