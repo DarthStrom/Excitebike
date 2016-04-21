@@ -1,0 +1,13 @@
+app_identifier "com.pairinggroup.Excitebike.app-store"
+apple_id "jasonsduffy@gmail.com"
+
+for_platform :ios do
+  for_lane :test do
+    app_identifier "com.pairinggroup.Excitebike.development"
+  end
+
+  for_lane :beta do
+    app_identifier "com.pairinggroup.Excitebike.ad-hoc"
+  end
+end
+
