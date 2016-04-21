@@ -21,29 +21,35 @@ platform :ios do
   desc "Submit a new Beta build to Hockey App"
   lane :beta do
 
-    keychain_name = "excitebike-certs"
+    # keychain_name = "excitebike-certs"
 
-    create_keychain(
-      name: keychain_name,
-      default_keychain: true,
-      unlock: true,
-      timeout: 3600,
-      lock_when_sleeps: true,
-      password: SecureRandom.base64
-    )
+    # create_keychain(
+    #   name: keychain_name,
+    #   default_keychain: true,
+    #   unlock: true,
+    #   timeout: 3600,
+    #   lock_when_sleeps: true,
+    #   password: SecureRandom.base64
+    # )
 
-    # Import distribution certificate
-    import_certificate(
-      certificate_path: "fastlane/Certificates/distribution.p12",
-      certificate_password: ENV["KEY_PASSWORD"],
-      keychain_name: keychain_name
-      )
+    # # Import distribution certificate
+    # import_certificate(
+    #   certificate_path: "fastlane/Certificates/distribution.p12",
+    #   certificate_password: ENV["KEY_PASSWORD"],
+    #   keychain_name: keychain_name
+    #   )
 
-    # Fetch provisioning profile
+    # # Fetch provisioning profile
+    # sigh(
+    #   adhoc: true,
+    #   provisioning_name: "Excitebike Ad Hoc"
+    #   )
+
+    cert
     sigh(
       adhoc: true,
-      provisioning_name: "Excitebike Ad Hoc"
-      )
+      force: true
+    )
 
     increment_build_number(build_number: number_of_commits)
 
