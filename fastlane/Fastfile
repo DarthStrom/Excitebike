@@ -21,31 +21,8 @@ platform :ios do
   desc "Submit a new Beta build to Hockey App"
   lane :beta do
 
-    # keychain_name = "excitebike-certs"
-
-    # create_keychain(
-    #   name: keychain_name,
-    #   default_keychain: true,
-    #   unlock: true,
-    #   timeout: 3600,
-    #   lock_when_sleeps: true,
-    #   password: SecureRandom.base64
-    # )
-
-    # # Import distribution certificate
-    # import_certificate(
-    #   certificate_path: "fastlane/Certificates/distribution.p12",
-    #   certificate_password: ENV["KEY_PASSWORD"],
-    #   keychain_name: keychain_name
-    #   )
-
-    # # Fetch provisioning profile
-    # sigh(
-    #   adhoc: true,
-    #   provisioning_name: "Excitebike Ad Hoc"
-    #   )
-
     cert
+
     sigh(
       adhoc: true,
       force: true
@@ -56,7 +33,7 @@ platform :ios do
     # Build
     gym(
       configuration: "Ad Hoc",
-      sdk: "iphoneos9.2",
+      sdk: "iphoneos8.1",
       clean: true,
       include_bitcode: false,
       include_symbols: true,
