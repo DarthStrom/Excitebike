@@ -11,16 +11,10 @@ platform :ios do
   desc "Run all the tests"
   lane :test do
 
-    # TODO: enable this once it works in travis
-    # scan(device: "iPhone 6 (8.1)")
-
-    xctest(
-        scheme: 'Excitebike',
-        destination: "name=iPhone 6,OS=8.1",
-        reports: [{
-            report: 'html',
-            output: "fastlane/test_output/report.html"
-        }]
+    scan(
+        device: "iPhone 6 (8.1)",
+        skip_build: true
     )
+    
   end
 end
