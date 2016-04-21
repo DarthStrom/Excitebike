@@ -291,7 +291,7 @@
 			};
 			name = Debug;
 		};
-		9643833E1CBF209E00EF2368 /* Release */ = {
+		9643833E1CBF209E00EF2368 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -328,7 +328,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Ad Hoc";
 		};
 		964383401CBF209E00EF2368 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -337,22 +337,22 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Excitebike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pairinggroup.Excitebike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pairinggroup.Excitebike.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		964383411CBF209E00EF2368 /* Release */ = {
+		964383411CBF209E00EF2368 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = Excitebike/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pairinggroup.Excitebike;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pairinggroup.Excitebike.ad-hoc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
-			name = Release;
+			name = "Ad Hoc";
 		};
 		964383431CBF209E00EF2368 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -367,7 +367,7 @@
 			};
 			name = Debug;
 		};
-		964383441CBF209E00EF2368 /* Release */ = {
+		964383441CBF209E00EF2368 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -377,7 +377,70 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Excitebike.app/Excitebike";
 			};
-			name = Release;
+			name = "Ad Hoc";
+		};
+		96F8A1EE1CC8697400A80D66 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "App Store";
+		};
+		96F8A1EF1CC8697400A80D66 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				INFOPLIST_FILE = Excitebike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pairinggroup.Excitebike.app-store";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "App Store";
+		};
+		96F8A1F01CC8697400A80D66 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExcitebikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pairinggroup.ExcitebikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Excitebike.app/Excitebike";
+			};
+			name = "App Store";
 		};
 /* End XCBuildConfiguration section */
 
@@ -386,28 +449,31 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9643833D1CBF209E00EF2368 /* Debug */,
-				9643833E1CBF209E00EF2368 /* Release */,
+				9643833E1CBF209E00EF2368 /* Ad Hoc */,
+				96F8A1EE1CC8697400A80D66 /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "App Store";
 		};
 		9643833F1CBF209E00EF2368 /* Build configuration list for PBXNativeTarget "Excitebike" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				964383401CBF209E00EF2368 /* Debug */,
-				964383411CBF209E00EF2368 /* Release */,
+				964383411CBF209E00EF2368 /* Ad Hoc */,
+				96F8A1EF1CC8697400A80D66 /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "App Store";
 		};
 		964383421CBF209E00EF2368 /* Build configuration list for PBXNativeTarget "ExcitebikeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				964383431CBF209E00EF2368 /* Debug */,
-				964383441CBF209E00EF2368 /* Release */,
+				964383441CBF209E00EF2368 /* Ad Hoc */,
+				96F8A1F01CC8697400A80D66 /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "App Store";
 		};
 /* End XCConfigurationList section */
 	};

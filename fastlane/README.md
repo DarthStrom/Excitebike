@@ -11,6 +11,11 @@ sudo gem install fastlane
 fastlane ios test
 ```
 Run all the tests
+### ios beta
+```
+fastlane ios beta
+```
+Submit a new Beta build to Hockey App
 
 ----
 
