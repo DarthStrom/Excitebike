@@ -32,7 +32,6 @@ platform :ios do
     # Build
     gym(
       configuration: "Ad Hoc",
-      sdk: "iphoneos8.1",
       clean: true,
       include_bitcode: false,
       include_symbols: true,
