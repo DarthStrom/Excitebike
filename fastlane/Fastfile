@@ -24,8 +24,7 @@ platform :ios do
     cert
 
     sigh(
-      adhoc: true,
-      force: true
+      adhoc: true
     )
 
     increment_build_number(build_number: number_of_commits)
