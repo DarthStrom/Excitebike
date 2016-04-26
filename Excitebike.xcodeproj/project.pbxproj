@@ -339,6 +339,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pairinggroup.Excitebike.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "$(sigh_com.pairinggroup.Excitebike.development_development)";
 			};
 			name = Debug;
 		};
@@ -351,6 +352,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pairinggroup.Excitebike.ad-hoc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "$(sigh_com.pairinggroup.Excitebike.ad-hoc_adhoc)";
 			};
 			name = "Ad Hoc";
 		};
@@ -427,6 +429,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pairinggroup.Excitebike.app-store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "$(sigh_com.pairinggroup.Excitebike.app-store_appstore)";
 			};
 			name = "App Store";
 		};

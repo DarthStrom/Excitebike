@@ -18,13 +18,29 @@ platform :ios do
       )
   end
 
+  desc "Sync certificates"
+  lane :match do
+    match(
+      type: "appstore",
+      app_identifier: "com.pairinggroup.Excitebike.app-store"
+    )
+    match(
+      type: "adhoc",
+      app_identifier: "com.pairinggroup.Excitebike.ad-hoc"
+    )
+    match(
+      type: "development",
+      app_identifier: "com.pairinggroup.Excitebike.development"
+    )
+  end
+
   desc "Submit a new Beta build to Hockey App"
   lane :beta do
 
-    cert
-
-    sigh(
-      adhoc: true
+    match(
+      type: "adhoc",
+      app_identifier: "com.pairinggroup.Excitebike.ad-hoc",
+      readonly: true
     )
 
     increment_build_number(build_number: number_of_commits)
