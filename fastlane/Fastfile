@@ -18,39 +18,36 @@ platform :ios do
       )
   end
 
+  desc "Sync certificates"
+  lane :match do
+    match(
+      type: "appstore",
+      app_identifier: "com.pairinggroup.Excitebike.app-store"
+    )
+    match(
+      type: "adhoc",
+      app_identifier: "com.pairinggroup.Excitebike.ad-hoc"
+    )
+    match(
+      type: "development",
+      app_identifier: "com.pairinggroup.Excitebike.development"
+    )
+  end
+
   desc "Submit a new Beta build to Hockey App"
   lane :beta do
 
-    keychain_name = "excitebike-certs"
-
-    create_keychain(
-      name: keychain_name,
-      default_keychain: true,
-      unlock: true,
-      timeout: 3600,
-      lock_when_sleeps: true,
-      password: SecureRandom.base64
+    match(
+      type: "adhoc",
+      app_identifier: "com.pairinggroup.Excitebike.ad-hoc",
+      readonly: true
     )
-
-    # Import distribution certificate
-    import_certificate(
-      certificate_path: "fastlane/Certificates/distribution.p12",
-      certificate_password: ENV["KEY_PASSWORD"],
-      keychain_name: keychain_name
-      )
-
-    # Fetch provisioning profile
-    sigh(
-      adhoc: true,
-      provisioning_name: "Excitebike Ad Hoc"
-      )
 
     increment_build_number(build_number: number_of_commits)
 
     # Build
     gym(
       configuration: "Ad Hoc",
-      sdk: "iphoneos9.2",
       clean: true,
       include_bitcode: false,
       include_symbols: true,
@@ -67,8 +64,5 @@ platform :ios do
       notes: last_git_commit[:message] + "\n(Uploaded automatically via fastlane)"
       )
 
-    delete_keychain(
-      name: keychain_name
-      )
   end
 end
