@@ -1,4 +1,4 @@
-git_url "https://DarthStrom@bitbucket.org/DarthStrom/excitebike-certificates.git"
+git_url "https://github.com/DarthStrom/excitebike-certificates.git"
 
 type "development" # The default type, can be: appstore, adhoc or development
 
