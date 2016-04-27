@@ -8,7 +8,6 @@ if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
 fi
 
 if [[ "$TRAVIS_BRANCH" == "develop" ]]; then
-  travis pubkey
   fastlane beta
   exit $?
 fi
