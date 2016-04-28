@@ -14,6 +14,12 @@
 		9643832D1CBF209E00EF2368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9643832C1CBF209E00EF2368 /* Assets.xcassets */; };
 		964383301CBF209E00EF2368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9643832E1CBF209E00EF2368 /* LaunchScreen.storyboard */; };
 		9643833B1CBF209E00EF2368 /* ExcitebikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9643833A1CBF209E00EF2368 /* ExcitebikeTests.swift */; };
+		968051DC1CD199A100515F6D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968051DA1CD199A100515F6D /* Nimble.framework */; };
+		968051DD1CD199A100515F6D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968051DB1CD199A100515F6D /* Quick.framework */; };
+		968051DF1CD199DB00515F6D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 968051DA1CD199A100515F6D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		968051E01CD199DB00515F6D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 968051DB1CD199A100515F6D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		96EED8F31CD1A88A00902D15 /* GameViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EED8F21CD1A88A00902D15 /* GameViewControllerTests.swift */; };
+		96F24AC51CD1A24D003126FA /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F24AC41CD1A24D003126FA /* Mocker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +31,20 @@
 			remoteInfo = Excitebike;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		968051DE1CD199BB00515F6D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				968051DF1CD199DB00515F6D /* Nimble.framework in CopyFiles */,
+				968051E01CD199DB00515F6D /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9643831E1CBF209E00EF2368 /* Excitebike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Excitebike.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +58,10 @@
 		964383361CBF209E00EF2368 /* ExcitebikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcitebikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9643833A1CBF209E00EF2368 /* ExcitebikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcitebikeTests.swift; sourceTree = "<group>"; };
 		9643833C1CBF209E00EF2368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968051DA1CD199A100515F6D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		968051DB1CD199A100515F6D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		96EED8F21CD1A88A00902D15 /* GameViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerTests.swift; sourceTree = "<group>"; };
+		96F24AC41CD1A24D003126FA /* Mocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968051DC1CD199A100515F6D /* Nimble.framework in Frameworks */,
+				968051DD1CD199A100515F6D /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +89,7 @@
 			children = (
 				964383201CBF209E00EF2368 /* Excitebike */,
 				964383391CBF209E00EF2368 /* ExcitebikeTests */,
+				968051D91CD1997D00515F6D /* Frameworks */,
 				9643831F1CBF209E00EF2368 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,12 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				964383211CBF209E00EF2368 /* AppDelegate.swift */,
+				9643832C1CBF209E00EF2368 /* Assets.xcassets */,
 				964383251CBF209E00EF2368 /* GameScene.swift */,
 				964383271CBF209E00EF2368 /* GameViewController.swift */,
-				964383291CBF209E00EF2368 /* Main.storyboard */,
-				9643832C1CBF209E00EF2368 /* Assets.xcassets */,
-				9643832E1CBF209E00EF2368 /* LaunchScreen.storyboard */,
 				964383311CBF209E00EF2368 /* Info.plist */,
+				9643832E1CBF209E00EF2368 /* LaunchScreen.storyboard */,
+				964383291CBF209E00EF2368 /* Main.storyboard */,
 			);
 			path = Excitebike;
 			sourceTree = "<group>";
@@ -94,9 +121,20 @@
 			isa = PBXGroup;
 			children = (
 				9643833A1CBF209E00EF2368 /* ExcitebikeTests.swift */,
+				96EED8F21CD1A88A00902D15 /* GameViewControllerTests.swift */,
 				9643833C1CBF209E00EF2368 /* Info.plist */,
+				96F24AC41CD1A24D003126FA /* Mocker.swift */,
 			);
 			path = ExcitebikeTests;
+			sourceTree = "<group>";
+		};
+		968051D91CD1997D00515F6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				968051DA1CD199A100515F6D /* Nimble.framework */,
+				968051DB1CD199A100515F6D /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +164,7 @@
 				964383321CBF209E00EF2368 /* Sources */,
 				964383331CBF209E00EF2368 /* Frameworks */,
 				964383341CBF209E00EF2368 /* Resources */,
+				968051DE1CD199BB00515F6D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -211,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F24AC51CD1A24D003126FA /* Mocker.swift in Sources */,
+				96EED8F31CD1A88A00902D15 /* GameViewControllerTests.swift in Sources */,
 				9643833B1CBF209E00EF2368 /* ExcitebikeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +402,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ExcitebikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pairinggroup.ExcitebikeTests;
@@ -373,6 +418,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ExcitebikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pairinggroup.ExcitebikeTests;
@@ -437,6 +486,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ExcitebikeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pairinggroup.ExcitebikeTests;
