@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		964383221CBF209E00EF2368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964383211CBF209E00EF2368 /* AppDelegate.swift */; };
-		964383261CBF209E00EF2368 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964383251CBF209E00EF2368 /* GameScene.swift */; };
+		964383261CBF209E00EF2368 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964383251CBF209E00EF2368 /* MenuScene.swift */; };
 		964383281CBF209E00EF2368 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964383271CBF209E00EF2368 /* GameViewController.swift */; };
 		9643832B1CBF209E00EF2368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964383291CBF209E00EF2368 /* Main.storyboard */; };
 		9643832D1CBF209E00EF2368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9643832C1CBF209E00EF2368 /* Assets.xcassets */; };
 		964383301CBF209E00EF2368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9643832E1CBF209E00EF2368 /* LaunchScreen.storyboard */; };
-		9643833B1CBF209E00EF2368 /* ExcitebikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9643833A1CBF209E00EF2368 /* ExcitebikeTests.swift */; };
+		9643833B1CBF209E00EF2368 /* MenuSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9643833A1CBF209E00EF2368 /* MenuSceneTests.swift */; };
 		968051DC1CD199A100515F6D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968051DA1CD199A100515F6D /* Nimble.framework */; };
 		968051DD1CD199A100515F6D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968051DB1CD199A100515F6D /* Quick.framework */; };
 		968051DF1CD199DB00515F6D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 968051DA1CD199A100515F6D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		968051E01CD199DB00515F6D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 968051DB1CD199A100515F6D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		96EED8F31CD1A88A00902D15 /* GameViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EED8F21CD1A88A00902D15 /* GameViewControllerTests.swift */; };
 		96F24AC51CD1A24D003126FA /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F24AC41CD1A24D003126FA /* Mocker.swift */; };
+		96F271031CF68293006F5FDC /* RaceSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F271021CF68293006F5FDC /* RaceSceneTests.swift */; };
+		96F271051CF68345006F5FDC /* RaceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F271041CF68345006F5FDC /* RaceScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,19 +51,21 @@
 /* Begin PBXFileReference section */
 		9643831E1CBF209E00EF2368 /* Excitebike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Excitebike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		964383211CBF209E00EF2368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		964383251CBF209E00EF2368 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		964383251CBF209E00EF2368 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		964383271CBF209E00EF2368 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		9643832A1CBF209E00EF2368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9643832C1CBF209E00EF2368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9643832F1CBF209E00EF2368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		964383311CBF209E00EF2368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964383361CBF209E00EF2368 /* ExcitebikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExcitebikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9643833A1CBF209E00EF2368 /* ExcitebikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcitebikeTests.swift; sourceTree = "<group>"; };
+		9643833A1CBF209E00EF2368 /* MenuSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSceneTests.swift; sourceTree = "<group>"; };
 		9643833C1CBF209E00EF2368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968051DA1CD199A100515F6D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		968051DB1CD199A100515F6D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		96EED8F21CD1A88A00902D15 /* GameViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerTests.swift; sourceTree = "<group>"; };
 		96F24AC41CD1A24D003126FA /* Mocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
+		96F271021CF68293006F5FDC /* RaceSceneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceSceneTests.swift; sourceTree = "<group>"; };
+		96F271041CF68345006F5FDC /* RaceScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +112,12 @@
 			children = (
 				964383211CBF209E00EF2368 /* AppDelegate.swift */,
 				9643832C1CBF209E00EF2368 /* Assets.xcassets */,
-				964383251CBF209E00EF2368 /* GameScene.swift */,
 				964383271CBF209E00EF2368 /* GameViewController.swift */,
 				964383311CBF209E00EF2368 /* Info.plist */,
 				9643832E1CBF209E00EF2368 /* LaunchScreen.storyboard */,
 				964383291CBF209E00EF2368 /* Main.storyboard */,
+				964383251CBF209E00EF2368 /* MenuScene.swift */,
+				96F271041CF68345006F5FDC /* RaceScene.swift */,
 			);
 			path = Excitebike;
 			sourceTree = "<group>";
@@ -120,10 +125,11 @@
 		964383391CBF209E00EF2368 /* ExcitebikeTests */ = {
 			isa = PBXGroup;
 			children = (
-				9643833A1CBF209E00EF2368 /* ExcitebikeTests.swift */,
 				96EED8F21CD1A88A00902D15 /* GameViewControllerTests.swift */,
 				9643833C1CBF209E00EF2368 /* Info.plist */,
+				9643833A1CBF209E00EF2368 /* MenuSceneTests.swift */,
 				96F24AC41CD1A24D003126FA /* Mocker.swift */,
+				96F271021CF68293006F5FDC /* RaceSceneTests.swift */,
 			);
 			path = ExcitebikeTests;
 			sourceTree = "<group>";
@@ -240,9 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964383261CBF209E00EF2368 /* GameScene.swift in Sources */,
+				964383261CBF209E00EF2368 /* MenuScene.swift in Sources */,
 				964383281CBF209E00EF2368 /* GameViewController.swift in Sources */,
 				964383221CBF209E00EF2368 /* AppDelegate.swift in Sources */,
+				96F271051CF68345006F5FDC /* RaceScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +259,8 @@
 			files = (
 				96F24AC51CD1A24D003126FA /* Mocker.swift in Sources */,
 				96EED8F31CD1A88A00902D15 /* GameViewControllerTests.swift in Sources */,
-				9643833B1CBF209E00EF2368 /* ExcitebikeTests.swift in Sources */,
+				9643833B1CBF209E00EF2368 /* MenuSceneTests.swift in Sources */,
+				96F271031CF68293006F5FDC /* RaceSceneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

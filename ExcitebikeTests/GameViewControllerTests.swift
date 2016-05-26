@@ -34,7 +34,7 @@ class GameViewControllerTests: QuickSpec {
 
                     expect(subject.view).to(beIdenticalTo(mockView))
                     expect(mockView.mocker.getInvocationCountFor("presentScene")).to(equal(1))
-                    let scene = mockView.mocker.getParametersFor("presentScene")?[0] as? GameScene
+                    let scene = mockView.mocker.getParametersFor("presentScene")?[0] as? MenuScene
                     expect(scene?.size).to(equal(mockView.bounds.size))
                     expect(scene?.scaleMode).to(equal(SKSceneScaleMode.AspectFit))
                 }

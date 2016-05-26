@@ -12,14 +12,14 @@ import SpriteKit
 
 @testable import Excitebike
 
-class ExcitebikeTests: QuickSpec {
+class MenuSceneTests: QuickSpec {
     
     override func spec() {
 
-        var subject: GameScene!
+        var subject: MenuScene!
 
         beforeEach {
-            subject = GameScene(size: CGSize(width: 100, height: 200))
+            subject = MenuScene(size: CGSize(width: 100, height: 200))
         }
 
         describe("didMoveToView") {
@@ -45,8 +45,9 @@ class ExcitebikeTests: QuickSpec {
                 subject.touchesBegan([], withEvent: nil)
 
                 expect(subject.view).to(beIdenticalTo(mockView))
-                expect(mockView.mocker.getInvocationCountFor("presentScene")).to(equal(1))
-                // TODO: check that it shows the right scene
+                let newScene = mockView.mocker.getParametersFor("presentScene")?[0] as? RaceScene
+                expect(newScene).notTo(beNil())
+                expect(newScene?.size).to(equal(subject.view?.frame.size))
             }
         }
     }
